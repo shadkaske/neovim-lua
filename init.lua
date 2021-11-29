@@ -15,5 +15,6 @@ require('cfg_neogit')
 -- Utility Settings
 require('cfg_pears')
 
+-- UI
 require('themes.onedark')
-
+require('cfg_lualine')

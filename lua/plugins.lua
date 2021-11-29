@@ -58,6 +58,11 @@ return require('packer').startup({function()
       require('surround').setup {mappings_style = 'surround'}
     end
   }
+  -- UI Stuffs
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   -- Git Stuffs
   use {
     'lewis6991/gitsigns.nvim',
