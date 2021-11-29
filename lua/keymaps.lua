@@ -20,12 +20,6 @@ end
 
 g.mapleader = ' '
 
--- Telescope
-map {'n', '<Leader>f', ':Telescope find_files<CR>'}
-
--- NvimTree
-map {'n', '<Leader>e', ':NvimTreeToggle<CR>'}
-
 -- Utility Keys
 map {'n', '<Leader>h', ':nohl<CR>'}
 map {'n', '<Leader>o', 'o<ESC>'}
@@ -53,7 +47,9 @@ map {'n', '<M-l>', ':vertical resize +2<CR>'}
 map {'i', 'jj', '<ESC>'}
 map {'i', ':w', '<ESC>:w<CR>'}
 map {'i', ';;', '<C-o>A;'}
+map {'n', ';;', 'A;<ESC>'}
 
+-- Move Lines in Visual Mode
 map {'x', 'K', ":move \'<-2<CR>gv-gv"}
 map {'x', 'J', ":move \'>+1<CR>gv-gv"}
 

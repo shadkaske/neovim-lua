@@ -76,6 +76,10 @@ return require('packer').startup({function()
     },
     config = function() require'nvim-tree'.setup {} end
   }
+  use {
+    'AckslD/nvim-whichkey-setup.lua',
+    requires = {'liuchengxu/vim-which-key'},
+  }
 
   -- Git Stuffs
   use {
