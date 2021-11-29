@@ -63,6 +63,12 @@ return require('packer').startup({function()
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+  use {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end
+  }
   -- Git Stuffs
   use {
     'lewis6991/gitsigns.nvim',
