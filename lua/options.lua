@@ -38,3 +38,7 @@ opt.updatetime = 300
 opt.autoread = true
 
 opt.listchars = {eol = '↲', tab = '▸ ', trail = '·'}
+
+-- Completion options
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.shortmess:append "c"
