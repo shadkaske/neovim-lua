@@ -12,5 +12,8 @@ require('nvim-cmp')
 -- Git Things
 require('cfg_neogit')
 
+-- Utility Settings
+require('cfg_pears')
+
 require('themes.onedark')
 
