@@ -3,7 +3,7 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 local use = require('packer').use
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
 return require('packer').startup({function()
@@ -26,6 +26,8 @@ return require('packer').startup({function()
   use { 'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- Snippets
+  use { 'L3MON4D3/LuaSnip' }
   -- Completion
   use { 'hrsh7th/nvim-cmp' }
   use { 'hrsh7th/cmp-buffer' }
