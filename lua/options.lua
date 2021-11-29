@@ -36,3 +36,5 @@ opt.autoindent = true
 opt.smartindent = true
 opt.updatetime = 300
 opt.autoread = true
+
+opt.listchars = {eol = '↲', tab = '▸ ', trail = '·'}

@@ -7,3 +7,6 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
+
+-- Lua Tabs
+vim.cmd([[autocmd BufEnter *.lua set shiftwidth=2 softtabstop=2 tabstop=2]])
