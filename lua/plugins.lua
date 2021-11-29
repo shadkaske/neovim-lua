@@ -58,6 +58,7 @@ return require('packer').startup({function()
       require('surround').setup {mappings_style = 'surround'}
     end
   }
+  use {'McAuleyPenney/tidy.nvim', event = 'BufWritePre'}
   -- UI Stuffs
   use {
     'nvim-lualine/lualine.nvim',

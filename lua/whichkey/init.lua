@@ -12,24 +12,34 @@ wk.config{
 local keymap = {
   e = {':NvimTreeToggle<CR>', 'NvimTree'},
   f = {':Telescope find_files<CR>', 'Find Files'}, -- set a single command and text
-  t = { -- set a nested structure
-    name = '+find',
+  h = {':nohl<CR>', 'Search Highlight Off'},
+  u = {
+    name = '+Utility',
+    o = {'o<ESC>', 'Add Line After'},
+    O = {'O<ESC>', 'Add Line Before'},
+  },
+  s = { -- set a nested structure
+    name = '+Search',
     b = {'<Cmd>Telescope buffers<CR>', 'buffers'},
     h = {'<Cmd>Telescope help_tags<CR>', 'help tags'},
     c = {
-      name = '+commands',
+      name = '+Commands',
       c = {'<Cmd>Telescope commands<CR>', 'commands'},
       h = {'<Cmd>Telescope command_history<CR>', 'history'},
     },
     q = {'<Cmd>Telescope quickfix<CR>', 'quickfix'},
     g = {
-      name = '+git',
+      name = '+Git',
       g = {'<Cmd>Telescope git_commits<CR>', 'commits'},
       c = {'<Cmd>Telescope git_bcommits<CR>', 'bcommits'},
       b = {'<Cmd>Telescope git_branches<CR>', 'branches'},
       s = {'<Cmd>Telescope git_status<CR>', 'status'},
     },
-  }
+  },
+  t = {
+    name = '+Toggle',
+    l = {':set list!<CR>', 'list chars'},
+  },
 }
 
 wk.register_keymap('leader', keymap)

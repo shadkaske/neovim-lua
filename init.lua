@@ -7,14 +7,14 @@ require('keymaps')
 require('lsp.lua-ls')
 
 -- Completion Settings
-require('nvim-cmp')
+require('nvim-cmp.init')
 
 -- Git Things
-require('cfg_neogit')
+require('neogit.init')
 
 -- Utility Settings
-require('cfg_pears')
-require('whichkey')
+require('pears.init')
+require('whichkey.init')
 
 -- UI
 require('themes.onedark')

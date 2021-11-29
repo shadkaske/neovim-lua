@@ -20,11 +20,6 @@ end
 
 g.mapleader = ' '
 
--- Utility Keys
-map {'n', '<Leader>h', ':nohl<CR>'}
-map {'n', '<Leader>o', 'o<ESC>'}
-map {'n', '<Leader>O', 'O<ESC>'}
-
 -- Close window
 map {'n', '<C-q>', '<C-w>q'}
 
