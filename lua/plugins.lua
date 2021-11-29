@@ -96,6 +96,8 @@ return require('packer').startup({function()
     'TimUntersberger/neogit',
     requires = {'nvim-lua/plenary.nvim'},
   }
+  -- Tmux Integration
+  use {'aserowy/tmux.nvim'}
 
 end,
 config = {

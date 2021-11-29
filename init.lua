@@ -15,6 +15,7 @@ require('neogit.init')
 -- Utility Settings
 require('pears.init')
 require('whichkey.init')
+require('tmuxnav.init')
 
 -- UI
 require('themes.onedark')

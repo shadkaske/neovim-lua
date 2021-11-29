@@ -27,18 +27,6 @@ map {'n', '<C-q>', '<C-w>q'}
 map {'n', '<TAB>', ':bnext<CR>'}
 map {'n', '<S-TAB>', ':bprev<CR>'}
 
--- Window movement
-map {'n', '<C-h>', '<C-w>h'}
-map {'n', '<C-j>', '<C-w>j'}
-map {'n', '<C-k>', '<C-w>k'}
-map {'n', '<C-l>', '<C-w>l'}
-
--- Window resizing
-map {'n', '<M-j>', ':resize -2<CR>'}
-map {'n', '<M-k>', ':resize +2<CR>'}
-map {'n', '<M-h>', ':vertical resize -2<CR>'}
-map {'n', '<M-l>', ':vertical resize +2<CR>'}
-
 map {'i', 'jj', '<ESC>'}
 map {'i', ':w', '<ESC>:w<CR>'}
 map {'i', ';;', '<C-o>A;'}
