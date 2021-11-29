@@ -35,6 +35,15 @@ return require('packer').startup({function()
   use { 'hrsh7th/cmp-nvim-lua' }
   use { 'hrsh7th/cmp-nvim-lsp' }
   use { 'saadparwaiz1/cmp_luasnip' }
+  use { 'onsails/lspkind-nvim' }
+  -- Utilities ( comments movement etc )
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
 end,
 config = {
   display = {
