@@ -51,6 +51,23 @@ return require('packer').startup({function()
       require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
     end
   }
+  -- Git Stuffs
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
+  use {
+    'TimUntersberger/neogit',
+    requires = {'nvim-lua/plenary.nvim'},
+    -- config = function()
+    --   require('neogit.lua')
+    -- end
+  }
 
 end,
 config = {
