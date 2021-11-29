@@ -23,6 +23,10 @@ g.mapleader = ' '
 -- Telescope
 map {'n', '<Leader>f', ':Telescope find_files<CR>'}
 
+-- NvimTree
+map {'n', '<Leader>e', ':NvimTreeToggle<CR>'}
+
+-- Utility Keys
 map {'n', '<Leader>h', ':nohl<CR>'}
 map {'n', '<Leader>o', 'o<ESC>'}
 map {'n', '<Leader>O', 'O<ESC>'}
