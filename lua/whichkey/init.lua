@@ -12,6 +12,10 @@ wk.config{
 local keymap = {
   e = {':NvimTreeToggle<CR>', 'NvimTree'},
   f = {':Telescope find_files<CR>', 'Find Files'}, -- set a single command and text
+  g = {
+    name = '+Git',
+    s = {':Neogit<CR>', 'Neogit Status'},
+  },
   h = {':nohl<CR>', 'Search Highlight Off'},
   u = {
     name = '+Utility',
